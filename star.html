@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    1/1은 그묘일
+    var a = array;
+    a = [31,29,31,30,31,30,31,31,30,31,30,31]
+    넣어두고
+    월들어오면
+    a[a]까지의 모든숫자 더해주고 b를 더해서
+    그걸 7로 나누었을때
+    나머지가 0 == 금요일
+    나머지가 1 == 토요일
+    2 == 일
+    3 == 월
+    4 == 화
+    5 == 수
+    6 == 목
+    <script>
+        var arr = [];
+        var a = 2;
+        var b = 5;
+        var num = 0;
+        arr = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+        if (a == 1) {
+            num = 0;
+        }
+        else {
+            for (var i = 0; i < a - 1; i++) {
+                num += arr[i];
+            }
+        }
+        num += b - 1;
+        if (num % 7 == 0) {
+            return "FRI";
+        }
+        if (num % 7 == 1) {
+            return "THU";
+        }
+        if (num % 7 == 2) {
+            return "WED";
+        }
+        if (num % 7 == 3) {
+            return "TUE";
+        }
+        if (num % 7 == 4) {
+            return "MON";
+        }
+        if (num % 7 == 5) {
+            return "SUN";
+        }
+        if (num % 7 == 6) {
+            return "SAT";
+        }
+        console.log(num);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n = 78;
+        var a = n.toString(2);
+        var arr = [];
+        arr = a.split("");
+        var arr2 = [];
+        arr2.push(1);
+        if (arr[1] == "1") {
+            arr2.push(1);
+            for (i = 3; i < arr.length; i++) {
+                if (arr[i] == "1") {
+                    if (arr[i - 1] == "1") {
+                    }
+                    else {
+                        arr2.push(1);
+                    }
+                }
+                else {
+                    arr2.push(0);
+                }
+            }
+        }
+        else {
+            for (i = 2; i < arr.length; i++) {
+                if (arr[i] == "1") {
+                    if (arr[i - 1] == "1") {
+                    }
+                    else {
+                        arr2.push(1);
+                    }
+                }
+                else {
+                    arr2.push(0);
+                }
+            }
+        }
+        console.log(arr2);
+
+        // 1001110
+        // 1010011
+
+    </script>
+</body>
+
+</html>

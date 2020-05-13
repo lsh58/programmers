@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+
+        var arr = [3, 1, 2, 3, 3, 2];
+        var n = arr.length / 2;
+        var arr2 = [];
+
+        for (var i = 0; i < arr.length - 1; i++) {
+            for (var j = i + 1; j < arr.length; j++) {
+                if (arr[j] > arr[j + 1]) { // 두 수를 비교하여 앞 수가 뒷 수보다 크면
+                    temp = arr[j]; // 두 수를 서로 바꿔준다
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+
+
+    </script>
+</body>
+
+</html>
